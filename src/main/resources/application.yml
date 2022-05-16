@@ -1,0 +1,30 @@
+#azure:
+#  activedirectory:
+#    tenant-id: e5727ff0-84f8-42ba-9c30-de24a8e8ceec
+#    client-id: 2418ec05-8e03-4a70-832e-029128b0b273
+#    client-secret: Ufj8Q~Av1oQvV45IyWZoYKE~qNqR5IRGHv9~Qbuq
+#    user-groups:
+#      allowed-groups: hackathon-contrib-Bifirst
+
+#spring.security.user.name: debajit.sen2@wfhackathon2022.onmicrosoft.com
+#spring.security.user.password: WFH@ckath0n.123!
+
+spring:
+  cloud:
+    azure:
+      active-directory:
+        enabled: true
+        profile:
+          tenant-id: e5727ff0-84f8-42ba-9c30-de24a8e8ceec
+#          environment:
+#            active-directory-endpoint: https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps
+        credential:
+#          client-id: 2418ec05-8e03-4a70-832e-029128b0b273
+#          client-secret: Ufj8Q~Av1oQvV45IyWZoYKE~qNqR5IRGHv9~Qbuq
+           client-id: 4ff6074c-43a8-4887-8616-a0b403eabbb6
+           client-secret: hBb8Q~Z2TBg6o4R9AwtUEnZxGktw4labfDZjCbRX
+
+
+
+  main:
+    allow-bean-definition-overriding: true
